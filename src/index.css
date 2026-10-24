@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-rozha: 'Rozha One', serif;
+    --font-yatra: 'Yatra One', cursive;
+    --font-hindi: 'Noto Serif Devanagari', serif;
+    --font-cinzel: 'Cinzel Decorative', serif;
+    --font-marcellus: 'Marcellus', serif;
+  }
+
+  body {
+    font-family: var(--font-hindi), serif;
+    background-color: #120306;
+    color: #FDF8E2;
+    overflow-x: hidden;
+  }
+}
+
+.font-rozha {
+  font-family: var(--font-rozha), serif;
+}
+
+.font-yatra {
+  font-family: var(--font-yatra), cursive;
+}
+
+.font-hindi {
+  font-family: var(--font-hindi), serif;
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel), serif;
+}
+
+.font-marcellus {
+  font-family: var(--font-marcellus), serif;
+}
+
+/* Gold Text Gradients */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #FFF3C4 0%, #F5D061 30%, #D4AF37 55%, #AA771C 80%, #F3D979 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-text-bright {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFE27D 40%, #E6AF2E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(135deg, #E5C158, #8B6508, #F5D77F, #976B0B) 1;
+}
+
+/* Luxury 3D Card Shadows & Borders with Lighter Festive Warmth */
+.royal-card {
+  background: linear-gradient(155deg, rgba(58, 12, 22, 0.88) 0%, rgba(35, 6, 12, 0.94) 50%, rgba(48, 10, 18, 0.92) 100%);
+  border: 1.5px solid rgba(245, 158, 11, 0.45);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75), 0 0 35px rgba(245, 158, 11, 0.2), inset 0 0 25px rgba(254, 240, 138, 0.08);
+}
+
+.royal-card-luminous {
+  background: linear-gradient(160deg, rgba(82, 18, 30, 0.92) 0%, rgba(42, 8, 16, 0.96) 60%, rgba(68, 14, 26, 0.92) 100%);
+  border: 2px solid rgba(253, 230, 138, 0.6);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.8), 0 0 45px rgba(245, 158, 11, 0.3), inset 0 0 30px rgba(254, 240, 138, 0.12);
+}
+
+.royal-card-ivory {
+  background: linear-gradient(145deg, rgba(255, 252, 242, 0.97), rgba(254, 243, 199, 0.95));
+  border: 2px solid rgba(217, 119, 6, 0.6);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.55), 0 0 35px rgba(245, 158, 11, 0.35);
+  color: #26050C;
+}
+
+/* Ornate corner brackets for traditional wedding card */
+.corner-ornament-tl {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 28px;
+  height: 28px;
+  border-top: 2px solid #E5C158;
+  border-left: 2px solid #E5C158;
+}
+
+.corner-ornament-tr {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border-top: 2px solid #E5C158;
+  border-right: 2px solid #E5C158;
+}
+
+.corner-ornament-bl {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 28px;
+  height: 28px;
+  border-bottom: 2px solid #E5C158;
+  border-left: 2px solid #E5C158;
+}
+
+.corner-ornament-br {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border-bottom: 2px solid #E5C158;
+  border-right: 2px solid #E5C158;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #140205;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8B1229;
+  border-radius: 4px;
+  border: 1px solid #D4AF37;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B45309;
+}
+
+@keyframes pulseSlow {
+  0%, 100% { opacity: 0.85; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.03); }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 4s ease-in-out infinite;
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1.5deg); }
+}
+
+.animate-float-gentle {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
