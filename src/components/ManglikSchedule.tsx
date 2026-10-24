@@ -121,7 +121,7 @@ export const ManglikSchedule: React.FC = () => {
           </motion.div>
         )}
 
-        {/* Card 2: मौसारा (मातृपक्ष / ननिहाल आगमन) */}
+        {/* Card 2: मामेरा (मातृपक्ष / ननिहाल आगमन) */}
         <motion.div
           initial={{ opacity: 0, y: 35, rotateY: -5 }}
           whileInView={{ opacity: 1, y: 0, rotateY: 0 }}
@@ -185,7 +185,7 @@ export const ManglikSchedule: React.FC = () => {
           </div>
 
           <div className="mt-6 pt-4 border-t border-amber-500/15 flex items-center justify-between text-xs text-amber-400/60 font-hindi">
-            <span>मांगलिक मौसारा</span>
+            <span>मांगलिक मामेरा</span>
             <div className="flex items-center gap-1">
               <MapPin className="w-3.5 h-3.5 text-amber-400" />
               <span>सालमगढ़ (राज.)</span>

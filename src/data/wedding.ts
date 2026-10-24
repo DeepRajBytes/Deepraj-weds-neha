@@ -168,7 +168,7 @@ export const weddingData: WeddingData = {
   eventsSectionTitle: "शुभ बेलाएं",
   eventsSectionSubtitle: "पावन विवाह महोत्सव कार्यक्रम विवरण",
   manglikSectionTitle: "मांगलिक कार्यक्रम",
-  manglikSectionSubtitle: "पारंपरिक रीति-रिवाज, गंगौज एवं मौसारा",
+  manglikSectionSubtitle: "पारंपरिक रीति-रिवाज, गंगौज एवं मामेरा",
   events: [
     {
       id: "ganesh-poojan",
@@ -230,7 +230,7 @@ export const weddingData: WeddingData = {
     },
     {
       id: "mousara-event",
-      title: "मौसारा (मातृपक्ष स्वागत)",
+      title: "मामेरा (मातृपक्ष स्वागत)",
       hindiTithi: "मिती अगहन सुदी 03, शुक्रवार",
       date: "27 नवंबर 2026",
       time: "दोपहर 01:00 बजे",
@@ -270,7 +270,7 @@ export const weddingData: WeddingData = {
     },
   ],
   mousara: {
-    title: "मौसारा",
+    title: "मामेरा",
     date: "27.11.2026, शुक्रवार",
     time: "दोपहर 01:00 बजे",
     hosts: "श्रीमान् ब्याईजी सा. कन्हैयालाल जी, समरथ जी सेन (राठौर)",

@@ -150,10 +150,18 @@ export const InvitationCard: React.FC<InvitationCardProps> = ({ onAccept, onMusi
 
             {/* Couple's Names In Gleaming Red & Gold Typography */}
             <div className="my-2 py-1">
-              <h1 className="font-rozha text-2xl sm:text-4xl lg:text-5xl text-[#5B0E1D] font-extrabold tracking-wider drop-shadow-sm leading-tight">
-                {weddingData.couple.displayName}
+              <h1 className="font-rozha text-[#5B0E1D] font-extrabold tracking-wider drop-shadow-sm leading-tight flex flex-col sm:flex-row items-center justify-center sm:gap-2.5">
+                <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl whitespace-nowrap">
+                  {weddingData.couple.groom.name}
+                </span>
+                <span className="text-sm sm:text-xl md:text-2xl text-amber-900/85 font-yatra my-0.5 sm:my-0">
+                  संग
+                </span>
+                <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl whitespace-nowrap">
+                  {weddingData.couple.bride.name}
+                </span>
               </h1>
-              <span className="font-marcellus text-xs sm:text-sm text-amber-900/90 tracking-widest block mt-0.5 font-bold">
+              <span className="font-marcellus text-xs sm:text-sm text-amber-900/90 tracking-widest block mt-1 font-bold">
                 {weddingData.couple.englishName}
               </span>
             </div>

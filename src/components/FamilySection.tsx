@@ -53,7 +53,7 @@ export const FamilySection: React.FC = () => {
         </motion.p>
       </div>
 
-      <div className="space-y-8">
+      <div className="space-y-10 sm:space-y-14">
         {/* Row 1: विनीत (Vineet) Only */}
         <div className="max-w-xl mx-auto">
           {/* विनीत */}
@@ -104,7 +104,7 @@ export const FamilySection: React.FC = () => {
         </div>
 
         {/* Row 2: ननिहाल पक्ष (नि.-सालमगढ़) */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -142,10 +142,10 @@ export const FamilySection: React.FC = () => {
             <span className="font-bold text-amber-300">स्नेही बच्चे: </span>
             <span>{nanihalPaksh.children}</span>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Row 3: दर्शनाभिलाषी (Darshanabhilashi Groups) */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -177,12 +177,12 @@ export const FamilySection: React.FC = () => {
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Row 4: विशेष आग्रह, स्वागतातुर & भाणेज */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* विशेष आग्रह (राकोदा) */}
-          <motion.div
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6"> */}
+        {/* विशेष आग्रह (राकोदा) */}
+        {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -202,10 +202,10 @@ export const FamilySection: React.FC = () => {
                 ))}
               </ul>
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          {/* स्वागतातुर (पटलावद) */}
-          <motion.div
+        {/* स्वागतातुर (पटलावद) */}
+        {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -226,10 +226,10 @@ export const FamilySection: React.FC = () => {
                 ))}
               </ul>
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          {/* भाणेज (रियावन) */}
-          <motion.div
+        {/* भाणेज (रियावन) */}
+        {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -250,11 +250,11 @@ export const FamilySection: React.FC = () => {
                 ))}
               </ul>
             </div>
-          </motion.div>
-        </div>
+          </motion.div> */}
+        {/* </div> */}
 
-        {/* Row 5: बालमनुहार (Balmanuhar with playful poem and child names) */}
-        <motion.div
+      {/* Row 5: बालमनुहार (Balmanuhar with playful poem and child names) */}
+      {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -284,33 +284,33 @@ export const FamilySection: React.FC = () => {
               </span>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
-        {/* Row 6: पारिवारिक व्यावसायिक प्रतिष्ठान */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="royal-card rounded-2xl p-6 border border-amber-500/40 text-center"
-        >
-          <div className="flex items-center justify-center gap-2 mb-4 text-amber-400">
-            <Building2 className="w-5 h-5 text-amber-300" />
-            <span className="font-hindi text-sm text-amber-300/90 font-semibold tracking-wider">
-              पारिवारिक प्रतिष्ठान
-            </span>
-          </div>
+      {/* Row 6: पारिवारिक व्यावसायिक प्रतिष्ठान */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="royal-card rounded-2xl p-6 border border-amber-500/40 text-center mt-10 sm:mt-14"
+      >
+        <div className="flex items-center justify-center gap-2 mb-4 text-amber-400">
+          <Building2 className="w-5 h-5 text-amber-300" />
+          <span className="font-hindi text-sm text-amber-300/90 font-semibold tracking-wider">
+            पारिवारिक प्रतिष्ठान
+          </span>
+        </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
-            {commercialFirms.map((firm, idx) => (
-              <div
-                key={idx}
-                className="p-3.5 rounded-xl bg-amber-950/40 border border-amber-500/30 text-amber-100 font-hindi font-bold text-sm sm:text-base flex items-center justify-center text-center"
-              >
-                {firm}
-              </div>
-            ))}
-          </div>
-        </motion.div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
+          {commercialFirms.map((firm, idx) => (
+            <div
+              key={idx}
+              className="p-3.5 rounded-xl bg-amber-950/40 border border-amber-500/30 text-amber-100 font-hindi font-bold text-sm sm:text-base flex items-center justify-center text-center"
+            >
+              {firm}
+            </div>
+          ))}
+        </div>
+      </motion.div>
       </div>
     </section>
   );

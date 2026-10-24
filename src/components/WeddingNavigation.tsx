@@ -16,7 +16,7 @@ export const WeddingNavigation: React.FC<WeddingNavigationProps> = ({
     { id: 'nimantran', label: 'निमंत्रण' },
     { id: 'var-vadhu', label: 'वर-वधू' },
     { id: 'karyakram', label: 'शुभ बेलाएं' },
-    { id: 'manglik', label: 'मांगलिक/मौसारा' },
+    { id: 'manglik', label: 'मांगलिक/मामेरा' },
     { id: 'pritibhoj', label: 'प्रीतिभोज' },
     { id: 'barat', label: 'बारात प्रस्थान' },
     { id: 'parivar', label: 'परिवार' },
@@ -59,11 +59,10 @@ export const WeddingNavigation: React.FC<WeddingNavigationProps> = ({
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`px-3.5 py-1 rounded-full text-xs font-hindi transition-all cursor-pointer whitespace-nowrap ${
-                  isActive
+                className={`px-3.5 py-1 rounded-full text-xs font-hindi transition-all cursor-pointer whitespace-nowrap ${isActive
                     ? 'bg-gradient-to-r from-amber-600 to-amber-500 text-stone-950 font-bold shadow-md'
                     : 'text-amber-200/80 hover:text-amber-100 hover:bg-amber-950/40'
-                }`}
+                  }`}
               >
                 {item.label}
               </button>
