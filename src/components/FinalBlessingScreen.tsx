@@ -236,7 +236,7 @@ export const FinalBlessingScreen: React.FC = () => {
       </div>
 
       {/* Interactive Guest Blessings / शुभकामनाएं Board */}
-      <div className="royal-card rounded-2xl p-6 sm:p-9 border border-amber-500/40 text-left mb-12">
+      {/* <div className="royal-card rounded-2xl p-6 sm:p-9 border border-amber-500/40 text-left mb-12">
         <div className="flex items-center justify-between gap-4 mb-4 pb-3 border-b border-amber-500/25">
           <div className="flex items-center gap-2">
             <Heart className="w-5 h-5 text-red-400 fill-red-400" />
@@ -247,10 +247,10 @@ export const FinalBlessingScreen: React.FC = () => {
           <span className="font-hindi text-xs text-amber-300/80">
             {blessings.length} आशीर्वाद प्राप्त
           </span>
-        </div>
+        </div> */}
 
         {/* Input Form */}
-        <form onSubmit={handleSendBlessing} className="mb-6 space-y-3">
+        {/* <form onSubmit={handleSendBlessing} className="mb-6 space-y-3">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <div className="sm:col-span-1">
               <label htmlFor="guest-name" className="sr-only">आपका शुभ नाम</label>
@@ -296,23 +296,9 @@ export const FinalBlessingScreen: React.FC = () => {
               <span>आपके पावन आशीर्वाद हेतु हार्दिक धन्यवाद!</span>
             </motion.p>
           )}
-        </form>
+        </form> */}
 
         {/* Display List of Blessings */}
-        <div className="space-y-3 max-h-52 overflow-y-auto pr-1">
-          {blessings.map((b) => (
-            <div
-              key={b.id}
-              className="p-3 rounded-xl bg-amber-950/25 border border-amber-500/20 text-xs sm:text-sm font-hindi flex flex-col gap-1"
-            >
-              <div className="flex items-center justify-between text-amber-300 font-semibold">
-                <span>{b.name}</span>
-                <span className="text-[11px] text-amber-400/60 font-normal">{b.date}</span>
-              </div>
-              <p className="text-amber-100/90 font-normal">{b.message}</p>
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* Back to Top */}
